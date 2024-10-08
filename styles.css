@@ -1,0 +1,143 @@
+.hide {
+    display: block; /* switch "block" to "none" to hide announcement */
+}
+.heading {
+    font-family:Anton;
+    font-size:800%;
+    color:red;
+    line-height:1;
+    text-align: center;
+    margin:0;
+    margin-bottom:0;
+}
+.heading2 {
+    font-family:Anton;
+    font-size:350%;
+    color:red;
+    line-height:1;
+    text-align: left;
+    margin:0;
+    margin-bottom:0;
+}
+.subheading {
+    font-family:Anton;
+    font-size:200%;
+    color:white;
+    text-align: center;
+    margin:0;
+}
+.subheading2 {
+    font-family:Anton;
+    font-size:100%;
+    color:white;
+    text-align: center;
+    margin:0;
+}
+.invert {
+    -webkit-filter: invert(1);
+    filter: invert(1);
+}
+.img1 {
+    width:48px;
+    height:48px;
+}
+.table1 {
+    font-family:Anton;
+    text-align: center;
+    border: 5px ;
+    border-style: solid;
+    border-color: white;
+    color: white;
+    border-collapse: collapse;
+    padding: 10px;
+    margin:0;
+}
+.smallunderline {
+    font-family:Anton;
+    font-size:150%;
+    color:white;
+    text-decoration: underline;
+    margin:0;
+}
+.large {
+    font-family:Anton;
+    font-size:185%;
+    color:white;
+    margin:0;
+}
+.medium {
+    font-family:Anton;
+    font-size:165%;
+    color:white;
+    margin:0;
+}
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+.announcement {
+    background-color: #565656;
+    font-family:Anton;
+    color:white;
+    text-align: center;
+    margin:0;
+    padding:0;
+    cursor: pointer;
+}
+.announcementHead {
+    font-size: 235%;
+    margin:0;
+    padding:0;
+}
+.announcementDetail {
+    font-size: 200%;
+    margin:0;
+    padding:0;
+}
+.announcementLink {
+    font-size:160%;
+    line-height: 2;
+    text-decoration: underline;
+    margin:0;
+    padding:0;
+}
+.or {
+    font-family:Anton;
+    color:white;
+    text-align: center;
+    background-color: #000000;
+    margin-bottom: 10px;
+    font-size:200%;
+}
+a:link {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:150%;
+}
+a:visited {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:150%;
+}
+a:hover {
+    color: red;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:150%;
+}
+a:active {
+    color: white;
+    background-color: transparent;
+    text-decoration: none;
+    font-size:135%;
+}
