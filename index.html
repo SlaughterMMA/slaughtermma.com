@@ -1,16 +1,21 @@
+<html>
 <style>
     .hide {
         display: block; /* "block" to show announcement, "none" to hide announcement */
     }
 </style>
 <script type="text/javascript">
+    var opponentName = "Jordan Frey"
+    var eventName = "Bayfront Brawl 16"
+    var eventDate = "November 27th, 2024"
+    var eventLocation = "the Bayfront Convention Center"
     var ticketUrl = "https://mpv.tickets.com/?agency=ERIE_EVENTS_MPV&orgid=37168&eventid=4767";
     var ppvUrl = "https://combatsportsnow.com/event/bayfront-brawl-16";
     var infoUrl = "https://www.tapology.com/fightcenter/events/117396-bayfront-brawl-16";
 </script>
 <head>
     <title>SlaughterMMA</title>
-    <link rel="icon" type="image/x-icon" href="/images/favicon.ico">
+    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
     <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
     <link rel="stylesheet" href="styles.css">
 </head>
@@ -20,12 +25,11 @@
 <p class="subheading">Amateur mixed martial artist based out of Cleveland, OH</p>
 <br>
 <br>
-<center>
-<table style="width:30%" class="table1">
+<table class="table1">
   <tr>
     <td class="table1">
         <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">
-            <img class="img1" src="/images/youtube.png" alt="YouTube">
+            <img class="img1" src="images/youtube.png" alt="YouTube">
         </a>
     </td>
     <td class="table1">
@@ -35,7 +39,7 @@
   <tr>
     <td class="table1">
         <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">
-            <img class="img1" src="/images/instagram.png" alt="Instagram">
+            <img class="img1" src="images/instagram.png" alt="Instagram">
         </a>
     </td>
     <td class="table1">
@@ -45,7 +49,7 @@
   <tr>
     <td class="table1">
         <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">
-            <img class="img1 invert" src="/images/tapology.png" alt="Tapology">
+            <img class="img1 invert" src="images/tapology.png" alt="Tapology">
         </a>
     </td>
     <td class="table1">
@@ -53,26 +57,29 @@
     </td>
   </tr>
 </table>
-</center>
+<br class="hide">
+<br class="hide">
+<p class="heading2 hide">Next Bout</p>
 <br>
+<div class="nextBout hide">
+<script>
+    document.write('vs. ' + opponentName)
+</script>
 <br>
 <script>
-    document.write('<div class="announcement hide" onclick="window.open(\'' + ticketUrl + '\', \'_blank\');" onmouseover="this.style.color=\'red\';" onmouseout="this.style.color=\'white\';">');
+    document.write('<span class="nextBoutDetail"><span style="color: white;">in</span> "' + eventName + '" <span style="color: white;">on</span> ' + eventDate + '<span style="color: white;"> at</span> ' + eventLocation +'</span>')
 </script>
-<div class="announcementHead">Next Bout: vs. Jordan Frey</div>
-<div class="announcementDetail">in "Bayfront Brawl 16" on 11.27.2024</div>
-<div class="announcementDetail">at the Bayfront Convention Center</div>
-<div class="announcementLink">Click here to get tickets!</div>
-</p>
+<br>
+<table class="nextBoutTable">
+    <tr>
+        <script>
+            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + ppvUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Buy PPV</td>')
+            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + infoUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Event Information</td>')
+            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + ticketUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Buy Tickets</td>')
+        </script>
+    </tr>
+</table>
 </div>
-<div class="or hide" style="background-color: #000000;margin-bottom: 10px;font-size:200%;"> OR </div>
-<script>
-    document.write('<div class="announcement announcementLink hide" onclick="window.open(\'' + ppvUrl + '\', \'_blank\');" onmouseover="this.style.color=\'red\';" onmouseout="this.style.color=\'white\';">Click here to buy PPV!</div>');
-</script>
-<div class="or hide" style="background-color: #000000;margin-bottom: 10px;margin-top:10px;font-size:200%;"> OR </div>
-<script>
-    document.write('<div class="announcement announcementLink hide" onclick="window.open(\'' + infoUrl + '\', \'_blank\');" onmouseover="this.style.color=\'red\';" onmouseout="this.style.color=\'white\';">Click here for event information!</div>');
-</script>
 <br>
 <br>
 <p class="heading2">Past Bouts</p>
@@ -103,3 +110,5 @@
         <td class="medium">OCL 25 at the Cherry Valley Event Center</td>
     </tr>
 </table>
+</body>
+</html>
