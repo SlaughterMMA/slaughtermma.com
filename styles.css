@@ -119,6 +119,9 @@
     margin:0;
     vertical-align: text-top;
 }
+.hide {
+    display: none; /* "block" to show announcement, "none" to hide announcement */
+}
 .blank_row
 {
     height: 30px !important; /* overwrites any other rules */
