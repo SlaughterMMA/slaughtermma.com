@@ -118,6 +118,10 @@
     color:white;
     margin:0;
 }
+.blank_row
+{
+    height: 30px !important; /* overwrites any other rules */
+}
 .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
