@@ -1,6 +1,6 @@
 var opponentName = "Jordan Frey";
 var eventName = "Bayfront Brawl 16";
-var eventDate = new Date("December 25, 2024 20:00:00");
+var eventDate = new Date("November 25, 2024 20:00:00");
 var eventLocation = "the Bayfront Convention Center";
 var ticketUrl = "https://mpv.tickets.com/?agency=ERIE_EVENTS_MPV&orgid=37168&eventid=4767";
 var ppvUrl = "https://combatsportsnow.com/event/bayfront-brawl-16";
@@ -15,7 +15,6 @@ let dayOfWeek = days[eventDate.getDay()];
 let year = eventDate.getFullYear();
 let time = eventDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
 var countDownDate = eventDate.getTime();
-const elements = document.getElementsByClassName('hide');
 
 // Update the count down every 1 second
 var x = setInterval(function() {
@@ -40,8 +39,37 @@ var x = setInterval(function() {
         document.getElementById("countdown").innerHTML = "EXPIRED";
     } else {
         // Loop through the elements and show them
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'block';
-        }
+        document.getElementsByClassName("nextBout")[0].style.display = "block";
     }
 }, 1000);
+
+function ppvOpen(e) {
+    if (!e) var e = window.event;
+    e.cancelBubble = true;
+    if (e.stopPropagation) e.stopPropagation(); 
+    window.open(ppvUrl, '_blank');
+}
+
+function infoOpen(e) {
+    if (!e) var e = window.event;
+    e.cancelBubble = true;
+    if (e.stopPropagation) e.stopPropagation();
+    window.open(infoUrl, '_blank');
+}
+
+function ticketOpen(e) {
+    if (!e) var e = window.event;
+    e.cancelBubble = true;
+    if (e.stopPropagation) e.stopPropagation();
+    window.open(ticketUrl, '_blank');
+}
+
+function mouseOut(element) {
+    element.style.color = getComputedStyle(element).getPropertyValue('--main-accent2');
+    element.style.background = black;
+}
+
+function mouseOver(element) {
+    element.style.color = black;
+    element.style.background = getComputedStyle(element).getPropertyValue('--main-accent1');
+}

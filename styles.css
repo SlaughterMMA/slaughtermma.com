@@ -58,7 +58,7 @@ html, body {
 .main {
     width: 100%;
     height: 100%;
-    position: fixed;
+
     margin: 0;
     margin-top: 0;
     font-family: var(--main-font);
@@ -159,15 +159,16 @@ html, body {
 }
 
 .main .content{
-    background: rgb(0, 0, 0, 0.5);
+    background: rgba(0, 0, 0, 0.5);
     z-index: 1;
-    min-height: 100%;
-    width: 100%;
+    position: relative;
+    height: 100%;
 }
 
 .main .content .nextBout{
     color: var(--main-accent1);
-    height: 100%;
+    display: none;
+    height: fit-content;
     max-width: fit-content;
     z-index: 1;
     position: relative;
@@ -187,4 +188,42 @@ html, body {
     margin-top: 0px;
     margin-bottom: 0px;
     font-style: italic;
+}
+
+.main .content .nextBout span {
+    color: var(--main-accent2);
+}
+
+.main .content .pastBouts h1 {
+    font-size: 350%;
+    margin: 0;
+    color: var(--main-accent1);
+}
+
+.main .content .pastBouts table{
+    width:95%;
+    font-size: 150%;
+    color: var(--main-accent2);
+    table-layout:fixed;
+    margin-left: auto;
+    margin-right: auto;
+}
+
+.video-container {
+    position: relative;
+    padding-bottom: 56.25%; /* 16:9 */
+    height: 0;
+}
+
+.video-container iframe {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+}
+
+.blank_row
+{
+    height: 30px !important; /* overwrites any other rules */
 }

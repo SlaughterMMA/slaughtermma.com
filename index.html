@@ -53,9 +53,65 @@
         <div class="content">
             <div class="nextBout">
                 <script>
-                    document.write('vs. ' + opponentName + '<br><span class="color: white;">in</span> "' + eventName + '" <span style="color: white;">on</span> ' + month + ' ' + day + ', ' + year + '<span style="color: white;"> @ </span> ' + time + '<br><span style="color: white;">at</span> ' + eventLocation +'</span>')
+                    document.write('vs. ' + opponentName + '<br><span>in</span> "' + eventName + '" <span>on</span> ' + month + ' ' + day + ', ' + year + '<span> @ </span> ' + time + '<br><span>at</span> ' + eventLocation +'</span>')
                 </script>
                 <p id="countdown"></p>
+                <table>
+                    <tr>
+                        <td onclick='ppvOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy PPV</td>
+                        <td onclick='infoOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Event Information</td>
+                        <td onclick='ticketOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy Tickets</td>
+                    </tr>
+                </table>
+            </div>
+            <div class="pastBouts">
+                <h1>Past Bouts</h1>
+                <table>
+                    <tr>
+                        <td style="text-decoration: underline;">November 27th, 2024</td>
+                        <td style="text-decoration: underline;">March 23rd, 2024</td>
+                        
+                    </tr>
+                    <tr>
+                        <td class="large">vs. Jordan Frey</td>
+                        <td class="large">vs. Jayden Potok</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/JMAwHi2OsfY"></iframe>
+                            </div>
+                        </td>
+                        <td style="padding: 15px;">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/DMgOdR8AGqY"></iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium">Bayfront Brawl 16 at the Bayfront Convention Center</td>
+                        <td class="medium">Live MMA 2 at the NEO Sports Plant</td>
+                    </tr>
+                    <tr class="blank_row">
+                        <td></td>
+                    </tr>
+                    <tr>
+                        <td style="text-decoration: underline;">June 17th, 2023</td>
+                    </tr>
+                    <tr>
+                        <td class="large">vs. Joe Ford</td>
+                    </tr>
+                    <tr>
+                        <td style="padding: 15px;">
+                            <div class="video-container">
+                                <iframe src="https://www.youtube.com/embed/Yh2oP76k98I"></iframe>
+                            </div>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td class="medium">OCL 25 at the Cherry Valley Event Center</td>
+                    </tr>
+                </table>
             </div>
         </div>
     </div>
