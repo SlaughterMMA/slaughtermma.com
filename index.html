@@ -1,165 +1,62 @@
 <html>
-<script type="text/javascript">
-    var opponentName = "Jordan Frey";
-    var eventName = "Bayfront Brawl 16";
-    var eventDate = new Date("November 27, 2024 20:00:00");
-    var eventLocation = "the Bayfront Convention Center";
-    var ticketUrl = "https://mpv.tickets.com/?agency=ERIE_EVENTS_MPV&orgid=37168&eventid=4767";
-    var ppvUrl = "https://combatsportsnow.com/event/bayfront-brawl-16";
-    var infoUrl = "https://www.tapology.com/fightcenter/events/117396-bayfront-brawl-16";
-    
-    // Variables below should not typically need to be updated
-    const months = ["January", "February", "March", "April", "May", "June", "July", "August", "September", "October", "November", "December"];
-    const days = ["Sunday", "Monday", "Tuesday", "Wednesday", "Thursday", "Friday", "Saturday"];
-    let month = months[eventDate.getMonth()];
-    let day = eventDate.getDate();
-    let dayOfWeek = days[eventDate.getDay()];
-    let year = eventDate.getFullYear();
-    let time = eventDate.toLocaleString('en-US', { hour: 'numeric', minute: 'numeric', hour12: true });
-    var countDownDate = eventDate.getTime();
-    const elements = document.getElementsByClassName('hide');
-    // Update the count down every 1 second
-    var x = setInterval(function() {
-
-    // Get today's date and time
-    var now = new Date().getTime();
-
-    // Find the distance between now and the count down date
-    var distance = countDownDate - now;
-
-    // Time calculations for days, hours, minutes and seconds
-    var days = Math.floor(distance / (1000 * 60 * 60 * 24));
-    var hours = Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60));
-    var minutes = Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60));
-    var seconds = Math.floor((distance % (1000 * 60)) / 1000);
-
-    // Display the result in the element with id="countdown"
-    document.getElementById("countdown").innerHTML = days + "d " + hours + "h " + minutes + "m " + seconds + "s ";
-
-    // If the count down is finished, write some text
-    if (distance < 0) {
-        clearInterval(x);
-        document.getElementById("countdown").innerHTML = "EXPIRED";
-    } else {
-        // Loop through the elements and show them
-        for (let i = 0; i < elements.length; i++) {
-            elements[i].style.display = 'block';
-        }
-    }
-    }, 1000);
-</script>
-<head>
-    <title>SlaughterMMA</title>
-    <link rel="icon" type="image/x-icon" href="images/favicon.ico">
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
-    <link rel="stylesheet" href="styles.css">
-</head>
-<body style="background-color:#000000;">
-<p class="heading">STAGINGMMA</p>
-<p class="subheading">Amateur mixed martial artist based out of Cleveland, OH</p>
-<br>
-<br>
-<table class="table1">
-  <tr>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">
-            <img class="img1" src="images/youtube.png" alt="YouTube">
-        </a>
-    </td>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">youtube.com/@SlaughterMMA</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">
-            <img class="img1" src="images/instagram.png" alt="Instagram">
-        </a>
-    </td>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">instagram.com/jamesxslaughter</a>
-    </td>
-  </tr>
-  <tr>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">
-            <img class="img1 invert" src="images/tapology.png" alt="Tapology">
-        </a>
-    </td>
-    <td class="table1">
-        <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">tapology.com/388725-james-slaughter</a>
-    </td>
-  </tr>
-</table>
-<br class="hide">
-<br class="hide">
-<p class="heading2 hide">Next Bout</p>
-<br>
-<div class="nextBout hide">
-<script>
-    document.write('vs. ' + opponentName + '<br><span class="nextBoutDetail"><span style="color: white;">in</span> "' + eventName + '" <span style="color: white;">on</span> ' + month + ' ' + day + ', ' + year + '<span style="color: white;"> @ </span> ' + time + '<br><span style="color: white;">at</span> ' + eventLocation +'</span>')
-</script>
-<p id="countdown" style="font-size: 150%;margin-top: 0px;margin-bottom: 0px;font-style: italic;"></p>
-<table class="nextBoutTable">
-    <tr>
-        <script>
-            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + ppvUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Buy PPV</td>')
-            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + infoUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Event Information</td>')
-            document.write('<td class="nextBoutButtons" onclick="window.open(\'' + ticketUrl + '\', \'_blank\');" onmouseover="this.style.color=\'black\';this.style.background=\'red\';" onmouseout="this.style.color=\'white\';this.style.background=\'#000000\';">Buy Tickets</td>')
-        </script>
-    </tr>
-</table>
-<span style="color: white;font-size: 45%;">* Please be sure to enter or select "James Slaughter" as your fighter *</span>
-</div>
-<br>
-<br>
-<p class="heading2">Past Bouts</p>
-<br>
-<table style="width:100%;table-layout:fixed;">
-    <tr>
-        <td class="smallunderline">November 27th, 2024</td>
-        <td class="smallunderline">March 23rd, 2024</td>
-        
-    </tr>
-    <tr>
-        <td class="large">vs. Jordan Frey</td>
-        <td class="large">vs. Jayden Potok</td>
-    </tr>
-    <tr>
-        <td style="padding: 15px;">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/JMAwHi2OsfY"></iframe>
+    <script src="js/main.js"></script> 
+    <head>
+        <title>SlaughterMMA</title>
+        <link rel="icon" type="image/x-icon" href="images/favicon.ico">
+        <link rel="stylesheet" href="https://fonts.googleapis.com/css?family=Anton">
+        <link rel="stylesheet" href="styles.css">
+    </head>
+    <!-- Content -->
+    <div class="header-bar">
+        <p class="heading">SLAUGHTERMMA</p>
+        <p class="subheading">Amateur mixed martial artist based out of Cleveland, OH</p>
+    </div>
+    <div class="main">
+        <video muted autoplay loop>
+            <source src="images/clips.mp4" type="video/mp4">
+        </video>
+        <img src="images/dots006.png">
+        <div class="socials">
+            <table>
+                <tr>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">
+                          <img src="images/youtube.png" alt="YouTube">
+                      </a>
+                  </td>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">youtube.com/@SlaughterMMA</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">
+                          <img src="images/instagram.png" alt="Instagram">
+                      </a>
+                  </td>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">instagram.com/jamesxslaughter</a>
+                  </td>
+                </tr>
+                <tr>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">
+                          <img class="invert" src="images/tapology.png" alt="Tapology">
+                      </a>
+                  </td>
+                  <td>
+                      <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">tapology.com/388725-james-slaughter</a>
+                  </td>
+                </tr>
+              </table>
+        </div>
+        <div class="content">
+            <div class="nextBout">
+                <script>
+                    document.write('vs. ' + opponentName + '<br><span class="color: white;">in</span> "' + eventName + '" <span style="color: white;">on</span> ' + month + ' ' + day + ', ' + year + '<span style="color: white;"> @ </span> ' + time + '<br><span style="color: white;">at</span> ' + eventLocation +'</span>')
+                </script>
+                <p id="countdown"></p>
             </div>
-        </td>
-        <td style="padding: 15px;">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/DMgOdR8AGqY"></iframe>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="medium">Bayfront Brawl 16 at the Bayfront Convention Center</td>
-        <td class="medium">Live MMA 2 at the NEO Sports Plant</td>
-    </tr>
-    <tr class="blank_row">
-        <td></td>
-    </tr>
-    <tr>
-        <td class="smallunderline">June 17th, 2023</td>
-    </tr>
-    <tr>
-        <td class="large">vs. Joe Ford</td>
-    </tr>
-    <tr>
-        <td style="padding: 15px;">
-            <div class="video-container">
-                <iframe src="https://www.youtube.com/embed/Yh2oP76k98I"></iframe>
-            </div>
-        </td>
-    </tr>
-    <tr>
-        <td class="medium">OCL 25 at the Cherry Valley Event Center</td>
-    </tr>
-</table>
-</body>
+        </div>
+    </div>
 </html>
