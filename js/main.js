@@ -1,6 +1,6 @@
 var opponentName = "Jordan Frey";
 var eventName = "Bayfront Brawl 16";
-var eventDate = new Date("December 25, 2024 20:00:00");
+var eventDate = new Date("November 25, 2024 20:00:00");
 var eventLocation = "the Bayfront Convention Center";
 var ticketUrl = "https://mpv.tickets.com/?agency=ERIE_EVENTS_MPV&orgid=37168&eventid=4767";
 var ppvUrl = "https://combatsportsnow.com/event/bayfront-brawl-16";
