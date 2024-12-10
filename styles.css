@@ -1,164 +1,247 @@
-.heading {
-    font-family:Anton;
-    font-size:800%;
-    color:red;
-    line-height:1;
+:root {
+    --main-color1: #e00000;
+    --main-color2: #e0e0e0;
+    --main-color3: #000000;
+    --main-bg1: rgba(0, 0, 0, 0.6);
+    --main-font: Anton;
+}  
+
+html, body {
+    height: 100%;
+    width: 100%;
+    background-color: var(--main-color3);
+    margin: 0;
+}
+
+video {
+    position: fixed;
+    right: 0;
+    bottom: 0;
+    min-width: 100%;
+    min-height: 100%;
+}
+
+img {
+    height: 100%;
+    width: 100%;
+    opacity: .5;
+    position: fixed;
+    object-fit: cover;
+}
+
+.main {
+    font-family: var(--main-font);
+    position: fixed;
+    background: var(--main-bg1);
+    width: 100%;
+    height: 100%;
+    overflow-y:auto;
+}
+
+.header-bar {
     text-align: center;
-    margin:0;
-    margin-bottom:0;
+    max-width: 100%;
+    width: 100%;
+    margin-top: 10px;
+    line-height: 1;
 }
-.heading2 {
-    font-family:Anton;
-    font-size:350%;
-    color:red;
-    line-height:1;
-    text-align: left;
-    margin:0;
-    margin-bottom:0;
+
+.header-bar h1 {
+    color: var(--main-color1);
+    font-size: 8em;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
 }
-.subheading {
-    font-family:Anton;
-    font-size:200%;
-    color:white;
-    text-align: center;
-    margin:0;
+
+.header-bar h2 {
+    color: var(--main-color2);
+    font-size: 2em;
+    margin: 0;
+    padding-bottom: 5px;
+    text-decoration: none;
+    font-weight: normal;
 }
-.subheading2 {
-    font-family:Anton;
-    font-size:100%;
-    color:white;
-    text-align: center;
-    margin:0;
-}
-.invert {
-    -webkit-filter: invert(1);
-    filter: invert(1);
-}
-.img1 {
-    width:48px;
-    height:48px;
-}
-.table1 {
-    font-family:Anton;
-    text-align: center;
-    max-width: fit-content;
-    border: 5px ;
-    border-style: solid;
-    border-color: white;
-    color: white;
+    
+.socials table {
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    font-size: 1.3em;
     border-collapse: collapse;
     padding: 10px;
-    margin-left: auto;
-    margin-right: auto;
+    text-align: center;
 }
-.nextBout{
-    font-family: Anton;
-    font-size: 275%;
-    color: white;
+
+.socials td {
     border: 5px ;
-    margin-top: 20px;
     border-style: solid;
-    border-color: red;
-    line-height: 2;
+    border-color: var(--main-color2);
+    padding: 5px;
+}
+
+.socials img {
+    height: 48px;
+    width: 48px;
+    display: block;
+    position: relative;
+    opacity: 1;
+    padding: 2;
+}
+
+.socials a:link, a:visited, a:active {
+    color: var(--main-color2);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.socials a:hover {
+    color: var(--main-color1);
+    background-color: transparent;
+    text-decoration: none;
+}
+
+.nextBout {
+    display: none;
+    margin-top: 30px;
+    height: fit-content;
+    width: 100%;    
+    color: var(--main-color1);
+}
+
+.nextBout h1 {
+    text-align: center;
+    font-size: 4em;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+}
+
+.nextBout h2 {
+    font-size: 1.5em;
+    margin: 0;
+    text-decoration: none;
+    color: var(--main-color2);
+    padding-bottom: 5px;
+    font-weight: normal;
+}
+
+.nextBout h3 {
+    font-size: .7em;
+    margin: 0;
+    text-decoration: none;
+    font-weight: normal;
+    color: var(--main-color2);
+    padding-top: 15px;
+}
+
+.nextBout .info {
+    text-align: center;
+    margin-left: auto;
+    margin-right: auto;
+    font-size: 2em;
     max-width: fit-content;
-    margin-left: auto;
-    margin-right: auto;
-    text-align: center;
-}
-.nextBoutTitle{
-    margin-top: 10px;
-}
-.nextBoutDetail{
-    font-family: Anton;
-    font-size: 55%;
-    color: red;
-    margin-left: 10px;
-    margin-right: 10px;
-    margin-bottom: 0px;
-    text-align: center;
-}
-.nextBoutTable{
-    font-family: Anton;
-    color: red;
-    margin-left: auto;
-    margin-right: auto;
-    margin-top: 0px;
-    margin-bottom: 5px;
-    text-align: center;
-    border-spacing: 50px 0px;
-    table-layout: fixed
-}
-.nextBoutButtons{
-    font-family: Anton;
-    font-size: 175%;
-    color: white;
+    padding-top: 20px;
+    padding-left: 50px;
+    padding-right:  50px;
     border: 5px;
-    padding: 20px;
     border-style: solid;
-    border-color: red;
-    width: 33%;
+    border-color: var(--main-color1);
+}
+
+.nextBout #countdown {
+    font-size: 2em;
+    line-height: 1;
+    margin-top: 25px;
+    margin-bottom: 10px;
+    font-style: italic;
+    color: var(--main-color2);
+}
+
+.nextBout span {
+    color: var(--main-color2);
+}
+
+.nextBout table {
+    margin-left: auto;
+    margin-right: auto;
+    padding-top: 30px;
+    font-size: 1em;
+    border-spacing: 30px 0px;
+}
+
+.nextBout td {
+    border: 5px;
+    border-style: solid;
+    border-color: var(--main-color1);
+    padding: 20px;
+    margin-top: 0;
+    color: var(--main-color2);
+}
+
+.nextBout td:hover {
+    background-color: var(--main-color1);
+    color: var(--main-color2);
     cursor: pointer;
 }
-.smallunderline {
-    font-family:Anton;
-    font-size:150%;
-    color:white;
-    text-decoration: underline;
-    margin:0;
+
+.pastBouts {
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 30px;
 }
-.large {
-    font-family:Anton;
-    font-size:185%;
-    color:white;
-    margin:0;
+
+.pastBouts h1 {
+    font-size: 4em;
+    margin: 0;
+    color: var(--main-color1);
+    text-decoration: none;
+    font-weight: normal;
+    text-align: center;
 }
-.medium {
-    font-family:Anton;
-    font-size:165%;
-    color:white;
-    margin:0;
+
+.pastBouts table{
+    width:95%;
+    font-size: 1.8em;
+    color: var(--main-color2);
+    table-layout:fixed;
+    margin-left: auto;
+    margin-right: auto;
+    border-spacing: 30px 0px;
+}
+
+.pastBouts .large {
+    font-size: 1em;
     vertical-align: text-top;
+    margin:0;
 }
-.hide {
-    display: none; /* "block" to show announcement, "none" to hide announcement */
+
+.pastBouts .medium {
+    font-size: .9em;
+    vertical-align: text-top;
+    margin:0;
 }
-.blank_row
-{
-    height: 30px !important; /* overwrites any other rules */
-}
-.video-container {
+
+.pastBouts .video-container {
     position: relative;
     padding-bottom: 56.25%; /* 16:9 */
     height: 0;
 }
-.video-container iframe {
+
+.pastBouts .video-container iframe {
     position: absolute;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
 }
-a:link {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-    font-size:150%;
+
+.pastBouts .blank_row{
+    height: 30px !important; /* overwrites any other rules */
 }
-a:visited {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-    font-size:150%;
-}
-a:hover {
-    color: red;
-    background-color: transparent;
-    text-decoration: none;
-    font-size:150%;
-}
-a:active {
-    color: white;
-    background-color: transparent;
-    text-decoration: none;
-    font-size:125%;
+
+.invert {
+    -webkit-filter: invert(1);
+    filter: invert(1);
 }
