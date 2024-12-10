@@ -7,62 +7,65 @@
         <link rel="stylesheet" href="styles.css">
     </head>
     <!-- Content -->
-    <div class="header-bar">
-        <p class="heading">SLAUGHTERMMA</p>
-        <p class="subheading">Amateur mixed martial artist based out of Cleveland, OH</p>
-    </div>
-    <div class="main">
-        <video playsinline muted autoplay loop>
-            <source src="images/clips.mp4" type="video/mp4">
-        </video>
-        <img src="images/dots006.png">
-        <div class="socials">
-            <table>
-                <tr>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">
-                          <img src="images/youtube.png" alt="YouTube">
-                      </a>
-                  </td>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">youtube.com/@SlaughterMMA</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">
-                          <img src="images/instagram.png" alt="Instagram">
-                      </a>
-                  </td>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">instagram.com/jamesxslaughter</a>
-                  </td>
-                </tr>
-                <tr>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">
-                          <img class="invert" src="images/tapology.png" alt="Tapology">
-                      </a>
-                  </td>
-                  <td>
-                      <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">tapology.com/388725-james-slaughter</a>
-                  </td>
-                </tr>
-              </table>
-        </div>
-        <div class="content">
-            <div class="nextBout">
-                <script>
-                    document.write('vs. ' + opponentName + '<br><span>in</span> "' + eventName + '" <span>on</span> ' + month + ' ' + day + ', ' + year + '<span> @ </span> ' + time + '<br><span>at</span> ' + eventLocation +'</span>')
-                </script>
-                <p id="countdown"></p>
+    <video playsinline muted autoplay loop>
+        <source src="images/clips.mp4" type="video/mp4">
+    </video>
+    <img src="images/dots006.png">
+    <body>
+        <div class="main">
+            <div class="header-bar">
+                <h1>SLAUGHTERMMA</h1>
+                <h2>Amateur mixed martial artist based out of Cleveland, OH<h2>
+            </div>
+            <div class="socials">
                 <table>
                     <tr>
-                        <td onclick='ppvOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy PPV</td>
-                        <td onclick='infoOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Event Information</td>
-                        <td onclick='ticketOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy Tickets</td>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">
+                                <img src="images/youtube.png" alt="YouTube">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.youtube.com/@SlaughterMMA">youtube.com/@SlaughterMMA</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">
+                                <img src="images/instagram.png" alt="Instagram">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://instagram.com/jamesxslaughter">instagram.com/jamesxslaughter</a>
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">
+                                <img class="invert" src="images/tapology.png" alt="Tapology">
+                            </a>
+                        </td>
+                        <td>
+                            <a target="_blank" rel="noopener noreferrer" href="https://www.tapology.com/fightcenter/fighters/388725-james-slaughter">tapology.com/388725-james-slaughter</a>
+                        </td>
                     </tr>
                 </table>
+            </div>
+            <div class="nextBout">
+                <h1>Next Bout</h1>
+                <div class="info">
+                    <script>
+                        document.write('vs. ' + opponentName + '<br><span>in</span> "' + eventName + '" <span>on</span> ' + month + ' ' + day + ', ' + year + '<span> @ </span> ' + time + '<br><span>at</span> ' + eventLocation +'</span>')
+                    </script>
+                    <p id="countdown"></p>
+                    <table>
+                        <tr>
+                            <td onclick='ppvOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy PPV</td>
+                            <td onclick='infoOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Event Information</td>
+                            <td onclick='ticketOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy Tickets</td>
+                        </tr>
+                    </table>
+                </div>
             </div>
             <div class="pastBouts">
                 <h1>Past Bouts</h1>
@@ -114,5 +117,5 @@
                 </table>
             </div>
         </div>
-    </div>
+    </body>
 </html>
