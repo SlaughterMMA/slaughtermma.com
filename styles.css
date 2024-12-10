@@ -112,7 +112,7 @@ img {
 
 .nextBout h1 {
     text-align: left;
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
     text-decoration: none;
     font-weight: normal;
@@ -193,7 +193,7 @@ img {
 }
 
 .pastBouts h1 {
-    font-size: 3em;
+    font-size: 3.5em;
     margin: 0;
     color: var(--main-color1);
     text-decoration: none;
@@ -202,7 +202,7 @@ img {
 
 .pastBouts table{
     width:95%;
-    font-size: 1.5em;
+    font-size: 1.8em;
     color: var(--main-color2);
     table-layout:fixed;
     margin-left: auto;
@@ -210,13 +210,13 @@ img {
 }
 
 .pastBouts .large {
-    font-size: 1.3em;
+    font-size: 1em;
     vertical-align: text-top;
     margin:0;
 }
 
 .pastBouts .medium {
-    font-size: 1.2em;
+    font-size: .9em;
     vertical-align: text-top;
     margin:0;
 }
