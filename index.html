@@ -55,16 +55,18 @@
                 <h1>Next Bout</h1>
                 <div class="info">
                     <script>
-                        document.write('vs. ' + opponentName + '<br><span>in</span> "' + eventName + '" <span>on</span> ' + month + ' ' + day + ', ' + year + '<span> @ </span> ' + time + '<br><span>at</span> ' + eventLocation +'</span>')
+                        document.write('<h2>vs. ' + opponentName + '</h2>')
+                        document.write('<span>in</span> "' + eventName + '" <span>on</span> ' + month + ' ' + day + ', ' + year + '<span> @ </span> ' + time + '<br><span>at</span> ' + eventLocation +'</span>')
                     </script>
                     <p id="countdown"></p>
                     <table>
                         <tr>
-                            <td onclick='ppvOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy PPV</td>
-                            <td onclick='infoOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Event Information</td>
-                            <td onclick='ticketOpen(event)' onmouseover='mouseOver(this)' onmouseout='mouseOut(this)'>Buy Tickets</td>
+                            <td onclick='ppvOpen(event)'>Buy PPV</td>
+                            <td onclick='infoOpen(event)'>Event Information</td>
+                            <td onclick='ticketOpen(event)'>Buy Tickets</td>
                         </tr>
                     </table>
+                    <h3>* Please be sure to enter or select "James Slaughter" as your fighter *</h3>
                 </div>
             </div>
             <div class="pastBouts">
