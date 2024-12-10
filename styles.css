@@ -49,6 +49,7 @@ img {
         color: var(--main-color1);
         font-size: 7.5em;
         margin: 0;
+        text-decoration: none;
     }
 
     h2 {
@@ -56,6 +57,7 @@ img {
         font-size: 2em;
         margin: 0;
         padding-bottom: 5px;
+        text-decoration: none;
     }
 }
 
@@ -103,6 +105,7 @@ img {
         text-align: left;
         font-size: 3em;
         margin: 0;
+        text-decoration: none;
     }
 
     .info {
@@ -158,6 +161,7 @@ img {
         font-size: 3em;
         margin: 0;
         color: var(--main-color1);
+        text-decoration: none;
     }
 
     table{
