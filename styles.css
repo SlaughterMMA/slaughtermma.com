@@ -142,6 +142,7 @@ img {
     font-weight: normal;
     color: var(--main-color2);
     padding-top: 15px;
+    padding-bottom: 30px;
 }
 
 .nextBout .info {
